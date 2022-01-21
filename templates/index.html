@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div>
+        <h1>Cuenta de visitas</h1>
+        <h2>{{session["visit"]}}</h2>
+    </div>
+    <div>
+        <h1>Cuenta de Formulario</h1>
+        <h2>{{session["contador"]}}</h2>
+    </div>
+    <div class="forms">
+        <form class="form" action="/sumar" method="POST">
+            <button class="boton boton_sumar" type="submit">Sumar 1</button>
+        </form>
+        <form class="form" action="/add_two" method="POST">
+            <button class="boton boton_sumar_dos" type="submit">Sumar 2</button>
+        </form>
+        <form class="form" action="/reset" method="POST">
+            <button class="boton boton_reset" type="submit">Reset</button>
+        </form>
+    </div>
+    <div>
+        <form class="formulario" action="/add_amount" method="POST">
+            <label for="cantidad">Cantidad a incrementar</label>
+            <input class="input_cantidad" type="number" placeholder="Ingrese cantidad a sumar" name="cantidad" id="cantidad">
+            <button class="boton boton_add" type="submit">Agregar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0% 20%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 1.0em;
+}
+
+.forms {
+    display: flex;
+    margin-top: 2.0em;
+}
+
+.form {
+    flex: 1;
+    padding: 0 2.0em;
+    text-align: center;
+}
+
+.boton {
+    color: white;
+    padding: 0.5em 1.0em;
+    border-radius: 10px;
+    font-size: large;
+    border: 0px;
+}
+
+.boton_sumar {
+    background-color: red;
+    right: 2.0em;
+}
+
+.boton_reset {
+    background-color: green;
+}
+
+.boton_sumar_dos {
+    background-color: orange;
+}
+
+.boton_add {
+    background-color: rebeccapurple;
+}
+
+.formulario {
+    text-align: center;
+    margin-top: 3.0em;
+}
+
+.input_cantidad {
+    height: 2.0em;
+    width: 20.0em;
+    margin: 0 2.0em;
+}
